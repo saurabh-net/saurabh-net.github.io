@@ -5,9 +5,7 @@ layout: page
 {{ content }}
 
 <div class="entries-{{ page.entries_layout | default: 'list' }}">
-  <p>t1</p>
   {%- if site.plugins contains 'jekyll-paginate' and page.paginate or site.gems contains 'jekyll-paginate' and page.paginate -%}
-  <p>t2</p>
     {%- comment -%}
       Add paginator.posts loop if jekyll-paginate plugin is enabled
       and page.paginate == true
